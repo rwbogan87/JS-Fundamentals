@@ -1,0 +1,38 @@
+body{
+    margin: 0px;
+}
+
+#navbar{
+    height: 60px;
+    width: 100vw;
+    background-color: #1da1f2;
+}
+
+.button-group{
+    position: absolute;
+    right: 0;
+    height: 60px;
+    width: 400px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.nav-links{
+    width: 80px;
+    padding: 3px 15px;
+    background-color: lightblue;
+    color:navy;
+    border-style: double;
+}
+
+.nav-links:hover{
+    background-color:orangered;
+    color: indigo;
+}
+
+.nav-links:active{
+    background-color:green;
+    color:black;
+}
+

@@ -1,0 +1,90 @@
+
+.section_8bit{ 
+    width: 100vw; 
+    float: left; 
+    border-left: 10px solid #FF6600;
+    border-right: 10px solid #FF6600;
+    position: relative; 
+    -webkit-box-sizing: border-box; 
+    -moz-box-sizing: border-box; 
+    box-sizing: border-box;
+    background-color:#049CD8;
+    }
+     
+    .section_8bit .wrapper{ 
+    display: block;
+    color: #FF6600;
+    padding: 40px; 
+    margin: -10px 0; 
+    border-top: 10px solid #FF6600; 
+    border-bottom: 10px solid #FF6600; 
+    }
+     
+    .section_8bit::before, 
+    .section_8bit::after,
+    .section_8bit .wrapper::before, 
+    .section_8bit .wrapper::after{ 
+    content: ''; 
+    width: 10px; 
+    height: 10px; 
+    display: block; 
+    position: absolute;   
+    background: #FF6600; 
+    }
+    .section_8bit::before{ top: -5px; left: -5px; }
+    .section_8bit::after{ top: -5px; right: -5px; }
+    .section_8bit .wrapper::before{ bottom: -5px; left: -5px; }
+    .section_8bit .wrapper::after{ bottom: -5px; right: -5px; }
+
+.wrapper{
+        background-color: black;
+}
+
+h1{
+    background-color:#6A0400;
+    text-align: center;
+}
+
+.bricks {
+    position: relative;
+    margin: 200px auto 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    & > div {
+      width: 70px;
+      height: 70px;
+    }
+  }
+
+.brick {
+    position: relative;
+  margin: 200px auto 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  & > div {
+    width: 70px;
+    height: 70px;
+  }
+  }
+
+.question {
+    width: 70px;
+    height: 70px;
+    cursor: pointer;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    font-size: 72px;
+    text-shadow: -1px 1px 2px #999;
+    background-color: #F3CD00;
+    border-style: solid;
+    border-width: 2px 2px 1px 1px;
+    border-color: lighten($gold-color, 20%) lighten($gold-color, 20%) darken($gold-color, 20%) darken($gold-color, 20%);
+    box-shadow: 0px 1px 1px 1px darken(#ccc, 20%);
+  }
+
+
